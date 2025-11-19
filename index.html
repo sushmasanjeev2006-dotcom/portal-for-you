@@ -1,34 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Access Gate – Shub’s Enigma</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shub Access Portal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="page-login">
 
-<main class="login-wrap">
-  <div class="login-card">
-    <div class="brand">
-      <div class="logo">ENIGMA</div>
-      <div class="tag">Secure Access</div>
+<body class="login-screen">
+
+    <div class="login-box">
+        <h1>ACCESS IDENTITY</h1>
+
+        <input id="username" type="text" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+
+        <button onclick="login()">ENTER PORTAL</button>
+        <p class="error" id="error"></p>
     </div>
 
-    <h1 class="headline">Authenticate — Shub</h1>
-    <p class="muted">Enter credentials to unlock the portal.</p>
-
-    <div class="form">
-      <input id="username" class="input" type="text" placeholder="Username">
-      <input id="password" class="input" type="password" placeholder="Password">
-      <button id="login-btn" class="btn primary">ENTER</button>
-      <p id="err" class="error hidden">Invalid credentials</p>
-    </div>
-
-    <div class="hint muted">Username: <code>Shub@princess</code>  •  Password: <code>Fast-text</code></div>
-  </div>
-</main>
-
-<script src="script.js" defer></script>
+<script src="script.js"></script>
 </body>
 </html>
