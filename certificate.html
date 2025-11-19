@@ -1,30 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Certificate of Binding</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Certificate</title><link rel="stylesheet" href="style.css"></head>
+<body class="page-cert">
 
-<body class="cert-body">
+<section class="cert-wrap">
+  <canvas id="certCanvas" width="1400" height="900" style="max-width:100%;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,0.5)"></canvas>
 
-<div class="certificate">
-    <img src="assets/monster.png" class="cert-monster">
+  <div class="controls" style="margin-top:18px">
+    <button id="downloadCert" class="btn primary">Download PNG</button>
+    <a href="warning.html" class="btn ghost">Continue</a>
+  </div>
+</section>
 
-    <h1>Certificate of Eternal Friendship</h1>
-
-    <p>This document certifies that</p>
-    <h2>SHUB</h2>
-
-    <p class="cert-text">
-        You are now officially — and forcefully — enrolled  
-        into this friendship. Escape is not permitted.
-        Void attempts will be rejected by the bracelet’s bond.
-    </p>
-
-    <img src="assets/certificate-bg.jpg" class="cert-stamp">
-
-    <button class="next-btn" onclick="location.href='warning.html'">Continue</button>
-</div>
-
+<script src="script.js" defer></script>
 </body>
 </html>
