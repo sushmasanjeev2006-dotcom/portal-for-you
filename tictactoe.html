@@ -1,17 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Tic-Tac-Toe</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Challenge — TicTacToe</title><link rel="stylesheet" href="style.css"></head>
+<body class="page-ttt">
 
-<body class="game-body">
-<h2 class="game-title">Challenge 1: Outsmart the AI</h2>
+<header class="topbar"><div class="brand-mini">ENIGMA • Duel</div></header>
 
-<div id="board" class="board"></div>
+<section class="stage-content">
+  <h2>Outsmart the Portal</h2>
+  <p class="muted">You are X. Portal is O. The portal uses Minimax (unbeatable).</p>
 
-<button class="next-btn" onclick="location.href='memory.html'">Next</button>
+  <div id="tttBoard" class="ttt-board"></div>
+  <div class="muted" id="tttMsg">Your move.</div>
 
-<script src="script.js"></script>
+  <div class="controls">
+    <button id="tttReset" class="btn ghost">Reset</button>
+    <button id="tttNext" class="btn primary">Next</button>
+  </div>
+</section>
+
+<script src="script.js" defer></script>
 </body>
 </html>
