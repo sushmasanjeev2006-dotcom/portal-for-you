@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Emotional Realm</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Certificate</title><link rel="stylesheet" href="style.css"></head>
+<body class="page-cert">
 
-<body class="emotional-body">
+<section class="cert-wrap">
+  <canvas id="certCanvas" width="1400" height="900" style="max-width:100%;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,0.5)"></canvas>
 
-<div class="emotion-box">
-    <h2>You’re almost done.</h2>
-    <p>Even warriors feel lonely sometimes.  
-       But remember: your bracelet connects you to the people who care.</p>
+  <div class="controls" style="margin-top:18px">
+    <button id="downloadCert" class="btn primary">Download PNG</button>
+    <a href="warning.html" class="btn ghost">Continue</a>
+  </div>
+</section>
 
-    <button onclick="location.href='certificate.html'">Final Stage</button>
-</div>
-
+<script src="script.js" defer></script>
 </body>
 </html>
