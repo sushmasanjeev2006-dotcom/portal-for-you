@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Gym Realm</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Gym Trial</title><link rel="stylesheet" href="style.css"></head>
+<body class="page-gym">
 
-<body class="gym-body">
-<h2>Challenge 3: Strength of Spirit</h2>
+<header class="topbar"><div class="brand-mini">ENIGMA • Strength</div></header>
 
-<p>Click the dumbbell 20 times to break the seal.</p>
+<section class="stage-content">
+  <h2>Strength of Spirit</h2>
+  <p class="muted">Tap the dumbbell 18 times to break the seal.</p>
 
-<div id="dumbbell"></div>
-<p id="counter">0 / 20</p>
+  <div id="dumbbell" class="dumbbell">🏋️</div>
+  <div class="muted">Reps: <span id="reps">0</span>/18</div>
 
-<button id="gym-next" class="hidden next-btn" onclick="location.href='emotional.html'">Next</button>
+  <div class="controls">
+    <button id="gymSkip" class="btn ghost">Skip</button>
+    <button id="gymNext" class="btn primary hidden">Next</button>
+  </div>
+</section>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
