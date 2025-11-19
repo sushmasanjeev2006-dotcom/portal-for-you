@@ -1,0 +1,60 @@
+/* style.css — Dark Anime Tech portal (mobile-first) */
+:root{
+  --bg:#06030a; --panel:#0b0710; --neon1:#b339c3; --neon2:#ff7ee7; --muted:#9b7fa0;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Poppins';background:linear-gradient(180deg,var(--bg),#0b0520);color:#fff}
+.hidden{display:none}
+.topbar{padding:12px 18px;border-bottom:1px solid rgba(255,255,255,0.03);display:flex;align-items:center;gap:12px}
+.brand-mini{font-weight:700;color:var(--neon1)}
+.muted{color:var(--muted);font-size:13px}
+.center{display:flex;align-items:center;justify-content:center}
+.btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+.btn.primary{background:linear-gradient(90deg,var(--neon1),var(--neon2));color:white;box-shadow:0 10px 40px rgba(179,57,195,0.12)}
+.btn.ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.04)}
+.input{display:block;width:100%;padding:12px;border-radius:10px;margin:10px 0;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);color:#fff}
+.error{color:#ff6b6b;margin-top:8px}
+.login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:18px}
+.login-card{width:100%;max-width:420px;padding:20px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);text-align:center}
+.brand{display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:10px}
+.logo{font-weight:800;letter-spacing:2px;color:var(--neon1)}
+.headline{font-size:22px;margin:8px 0;color:#ffdff7}
+.form{margin-top:8px}
+
+/* portal */
+.portal-full{position:relative;height:100vh}
+.bg-img{width:100%;height:100%;object-fit:cover;filter:brightness(0.45)}
+.portal-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.center-card{background:linear-gradient(180deg,rgba(6,3,10,0.6),rgba(6,3,10,0.75));padding:20px;border-radius:14px;border:1px solid rgba(255,255,255,0.03);text-align:center}
+.bracelet{width:150px;height:150px;object-fit:cover;border-radius:999px;border:3px solid rgba(255,255,255,0.03);box-shadow:0 18px 50px rgba(179,57,195,0.08);cursor:pointer;transition:transform .22s ease}
+
+/* stage layout */
+.stage-content{max-width:980px;margin:20px auto;padding:18px}
+.coin-canvas{width:100%;height:320px;border-radius:10px;background:linear-gradient(180deg,#0f0713,#13031b);border:1px solid rgba(255,255,255,0.03);display:block}
+
+/* TicTacToe */
+.ttt-board{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:360px;margin:10px auto}
+.ttt-board .cell{background:linear-gradient(180deg,#0f0713,#13031b);padding:18px;height:96px;display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);cursor:pointer}
+.ttt-board .cell.disabled{opacity:0.6;cursor:not-allowed}
+
+/* memory ring */
+.memory-ring{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.memory-bead{width:68px;height:68px;border-radius:999px;background:linear-gradient(90deg,var(--neon1),var(--neon2));box-shadow:0 12px 30px rgba(179,57,195,0.12);cursor:pointer;opacity:.9;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+/* gym */
+.dumbbell{font-size:48px;display:block;margin:12px auto;cursor:pointer}
+
+/* certificate */
+.cert-wrap{max-width:1100px;margin:24px auto;padding:18px;text-align:center}
+canvas{width:100%;height:auto;}
+
+/* final warning */
+.warning-box{max-width:720px;margin:24px auto;padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));text-align:center}
+
+/* responsive */
+@media(max-width:720px){
+  .ttt-board .cell{height:72px;font-size:26px}
+  .memory-bead{width:56px;height:56px}
+  .bracelet{width:120px;height:120px}
+}
