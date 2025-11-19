@@ -1,29 +1,27 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Enigma Portal</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Portal — Activate Bracelet</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<body class="page-portal">
 
-<body>
-
-<div id="portal-screen">
-    <img src="assets/bg-portal.jpg" id="portal-bg">
-
-    <div id="bracelet-container">
-        <img src="assets/bracelet.png" id="bracelet-img">
-        <p class="portal-text">Touch the bracelet to unlock the dimensional gate</p>
+<div class="portal-full">
+  <img src="assets/bg-portal.jpg" class="bg-img" alt="">
+  <div class="portal-overlay">
+    <div class="center-card">
+      <h2 class="headline small">Bracelet Activation</h2>
+      <p class="muted">Tap the bracelet to power the gateway.</p>
+      <img id="bracelet" src="assets/bracelet.png" alt="bracelet" class="bracelet">
+      <div class="actions">
+        <button id="skip-portal" class="btn ghost">Skip</button>
+      </div>
     </div>
+  </div>
 </div>
 
-<script>
-document.getElementById("bracelet-img").addEventListener("click", ()=>{
-    document.body.classList.add("fade-out");
-    setTimeout(()=> window.location.href="stage1.html", 900);
-});
-</script>
-
+<script src="script.js" defer></script>
 </body>
 </html>
