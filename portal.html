@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enigma Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="portal-screen">
+    <img src="assets/bg-portal.jpg" id="portal-bg">
+
+    <div id="bracelet-container">
+        <img src="assets/bracelet.png" id="bracelet-img">
+        <p class="portal-text">Touch the bracelet to unlock the dimensional gate</p>
+    </div>
+</div>
+
+<script>
+document.getElementById("bracelet-img").addEventListener("click", ()=>{
+    document.body.classList.add("fade-out");
+    setTimeout(()=> window.location.href="stage1.html", 900);
+});
+</script>
+
+</body>
+</html>
